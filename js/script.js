@@ -12,7 +12,7 @@ var Worker = {
 	job: 'IT',
 	salary: '$500',
 	work: function(){
-		console.log('Worker is working');
+		console.log('Working hard');
 	},
 };
 
@@ -20,7 +20,7 @@ var Student = {
 	university: 'GoIT',
 	scholarship: '$10',
 	watchTV: function(){
-		console.log(`Student watching "Game of Thrones"`);
+		console.log(`"Game of Thrones" on HBO`);
 	},
 };
 
