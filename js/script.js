@@ -1,7 +1,7 @@
 'use strict'
 
 var Human = {
-	name: 'T100',
+	name: 'T1000',
 	age: 30,
 	sex: 'male',
 	height: 180,
@@ -12,7 +12,7 @@ var Worker = {
 	job: 'IT',
 	salary: '$500',
 	work: function(){
-		console.log('Working hard');
+		console.log('He works hard');
 	},
 };
 
@@ -20,7 +20,7 @@ var Student = {
 	university: 'GoIT',
 	scholarship: '$10',
 	watchTV: function(){
-		console.log(`"Game of Thrones" on HBO`);
+		console.log(`He likes wathing "Game of Thrones" on HBO`);
 	},
 };
 
@@ -30,12 +30,13 @@ Worker.__proto__ = Student;
 
 
 console.log("Human", Human);
-console.log("Student", Student);
-console.log("Worker", Worker);
+console.log("Student became Human", Student);
+console.log("Worker became Student that became Human", Worker);
 
 console.log(
 `
 Human => Student => Worker
+
 
 Human's name is ${Student.name},
 Student's name is ${Student.name},
@@ -48,3 +49,4 @@ Worker's university is ${Worker.university},
 `);
 
 Worker.watchTV();
+Worker.work();
